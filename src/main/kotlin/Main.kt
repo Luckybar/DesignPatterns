@@ -1,7 +1,19 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+}
+
+class PBaseDefenseGame {
+    private var gameEventSystem = GameEventSystem();
+    private val campSystem = CampSystem();
+    private val battleSystem = BattleSystem();
+
+    fun initial(){
+        gameEventSystem.initial();
+        campSystem.initial();
+        battleSystem.initial();
+    }
+
+    fun battle(){
+        battleSystem.update();
+    }
 }
