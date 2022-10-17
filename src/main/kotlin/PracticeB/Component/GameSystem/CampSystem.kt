@@ -1,4 +1,6 @@
+package PracticeB.Component.GameSystem
 
+import PracticeB.Interface.GameSystem
 
 class CampSystem() : GameSystem {
     private var campSystem: CampSystem? = null;
@@ -13,7 +15,7 @@ class CampSystem() : GameSystem {
         println("campSystem release");
     }
 
-    private fun test() {
-        println("campSystem test");
+    fun test(): String {
+        return "campSystem test";
     }
 }

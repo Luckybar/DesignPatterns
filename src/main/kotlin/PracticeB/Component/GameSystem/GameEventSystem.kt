@@ -1,4 +1,6 @@
+package PracticeB.Component.GameSystem
 
+import PracticeB.Interface.GameSystem
 
 class GameEventSystem() : GameSystem {
     private var gameEventSystem: GameEventSystem? = null;
